@@ -1,6 +1,8 @@
 # Project-AwesomeBooks
 Goal of "Project Awesome Books" is creating a functioning webpage where we can add new book to display and remove book from the collection using JavaScript Objects and classes.
+
 <!-- TABLE OF CONTENTS -->
+
 # 📗 Table of Contents
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
@@ -21,7 +23,9 @@ Goal of "Project Awesome Books" is creating a functioning webpage where we can a
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
+
 <!-- PROJECT DESCRIPTION -->
+
 # 📖 Awesome Books <a name="about-project"></a>
 **Awesome Books** is a working webpage with more user interactions using the JavaScript, mainly JavaScript Objects and Classes where we can add new books to the collection of data and display them in the webpage with a added feature of removing a book from the data collection.
 ## 🛠 Built With <a name="built-with"></a>
@@ -34,12 +38,19 @@ Goal of "Project Awesome Books" is creating a functioning webpage where we can a
     <li><a href="https://www.w3schools.com/javascript/default.asp">JavaScript</a></li>
   </ul>
 </details>
+
 <!-- Features -->
+
 ### Key Features <a name="key-features"></a>
+
 - **Adds new Book to the Webpage display and collection using "Add Book" button**
-- **Removes a Book from the collection and the display when clicked on remove button."
+
+- **Removes a Book from the collection and the display when clicked on remove button.**
+
 - **Responsive Web design**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
 - [Live Demo Link]()
