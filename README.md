@@ -126,9 +126,9 @@ Feel free to check the github page.
 
 Contributors for this project:
 
-👤 ****
+👤 **Mohammad Mahdi Niazi**
 
-- GitHub: [@]()
+- GitHub: [@Mahdi-Niazi](https://github.com/Mahdi-Niazi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
