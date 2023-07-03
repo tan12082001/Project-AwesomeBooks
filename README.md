@@ -52,64 +52,105 @@ Goal of "Project Awesome Books" is creating a functioning webpage where we can a
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
+
 ## 🚀 Live Demo <a name="live-demo"></a>
+
 - [Live Demo Link]()
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- WALKTHROUGH -->
+
 ## Walkthrough <a name="walkthrough"></a>
+
 - [Loom Video]()
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- GETTING STARTED -->
+
 ## 💻 Getting Started <a name="getting-started"></a>
+
 With this Project portfolio, you can get an basic idea of how you can design a Responsive Web design and make use of media queries.
 To get a local copy up and running, follow these steps.
 ### Prerequisites
+
 In order to run this project you need: Linters
+
 ```sh
  npm init -y 
  npm install --save-dev hint@7.x
  npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
 ```
+
 ### Setup
+
 Clone this repository to your desired folder:
 ```sh
   cd my-folder
   git clone git@github.com:tan12082001/Project-AwesomeBooks.git
 ```
+
 ### Usage
+
 To run the project, if you are using a Code Editor make use of live server.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- AUTHORS -->
+
 ## 👥 Authors <a name="authors"></a>
+
 👤 **Tanmayi Manku**
+
 - GitHub: [@tan12082001](https://github.com/tan12082001)
 - Twitter: [@TanmayiManku](https://twitter.com/TanmayiManku)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/tanmayi-manku-99195720a/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- FUTURE FEATURES -->
+
 ## 🔭 Future Features <a name="future-features"></a>
+
 - [ ] **Upcoming Project features**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- CONTRIBUTING -->
+
 ## 🤝 Contributing <a name="contributing"></a>
+
 Contributions, issues, and feature requests are welcome!
 Feel free to check the github page.
+
 Contributors for this project:
+
 👤 ****
+
 - GitHub: [@]()
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- SUPPORT -->
+
 ## ⭐️ Show your support <a name="support"></a>
+
 If you like this project give a star.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 <!-- ACKNOWLEDGEMENTS -->
+
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
 I would like to thank Microverse.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
+
 ## 📝 License <a name="license"></a>
+
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
