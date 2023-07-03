@@ -1,4 +1,4 @@
 const books = {
     Name: String, 
-    Authore: String
+    Author: String
 };
