@@ -1,5 +1,5 @@
 // Intializing Variables
-const bookstorage = JSON.parse(localStorage.getItem('books-display')) || [];
+let bookstorage = JSON.parse(localStorage.getItem('books-display')) || [];
 const bookname = document.getElementById('book-name');
 const authorname = document.getElementById('author-name');
 const addbutton = document.querySelector('.add-book-button');
@@ -33,7 +33,7 @@ function displaybooks() {
           <button class='re' type='button' onclick = 'removebook(${bookstorage[i].id})'>remove</button>
       </ul>
     `;
-  }
+    }
 }
 
 // Function for removeing the existed book from object.
@@ -54,4 +54,13 @@ addbutton.addEventListener('click', () => {
   displaybooks();
   bookname.value = '';
   authorname.value = '';
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    let bookListStorage = localStorage.getItem('bookstorage');
+    if (bookListStorage) {
+        bookstorage = JSON.parse(bookListStorage);
+        displaybooks();
+    }
+
 });
