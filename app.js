@@ -19,13 +19,13 @@ function addbook(title, author) {
   newbook.author = author;
   newbook.id = bookstorage.length + 1;
   bookstorage.push(newbook);
-  localStorage.setItem('bookstorage', JSON.stringify(bookstorage));
 }
 
 // Function for displaying added books
 function displaybooks() {
   presentbooks.innerHTML = '';
   for (let i = 0; i < bookstorage.length; i += 1) {
+    bookstorage[i].id = (bookstorage.indexOf(bookstorage[i])) + 1;
     presentbooks.innerHTML += `
       <ul>
         <li>${bookstorage[i].title}</li>
@@ -44,8 +44,8 @@ function removebook(id) {
     }
   }
   // Updating the localStorage
-  localStorage.setItem('bookstorage', JSON.stringify(bookstorage));
   displaybooks();
+  localStorage.setItem('bookstorage', JSON.stringify(bookstorage));
 }
 
 // Button functionality for saving the data to the objects.
@@ -54,6 +54,7 @@ addbutton.addEventListener('click', () => {
   displaybooks();
   bookname.value = '';
   authorname.value = '';
+  localStorage.setItem('bookstorage', JSON.stringify(bookstorage));
 });
 
 // Retrive on page reload
