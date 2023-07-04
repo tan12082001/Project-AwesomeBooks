@@ -105,7 +105,7 @@ To run the project, if you are using a Code Editor make use of live server.
 👤 **Mohammad Mahdi Niazi**
 
 - GitHub: [@Mahdi-Niazi](https://github.com/Mahdi-Niazi)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tanmayi-manku-99195720a/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mohammad-mahdi-niazi-58a262235)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
