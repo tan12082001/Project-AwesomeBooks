@@ -56,6 +56,7 @@ addbutton.addEventListener('click', () => {
   authorname.value = '';
 });
 
+//Retrive on page reload
 document.addEventListener('DOMContentLoaded', () => {
     let bookListStorage = localStorage.getItem('bookstorage');
     if (bookListStorage) {
