@@ -14,7 +14,7 @@ function addbook(title, author) {
   const newbook = Object.create(bookobject);
   newbook.title = title;
   newbook.author = author;
-  newbook.id = Math.floor(Math.random() * 10);
+  newbook.id = bookstorage.length+1;
   bookstorage.push(newbook);
   localStorage.setItem('bookstorage', JSON.stringify(bookstorage));
 }
