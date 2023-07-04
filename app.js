@@ -28,12 +28,12 @@ function displaybooks() {
   for (let i = 0; i < bookstorage.length; i += 1) {
     presentbooks.innerHTML += `
       <ul>
-          <li>${bookstorage[i].title}</li>
-          <li>${bookstorage[i].author}</li>
-          <button class='re' type='button' onclick = 'removebook(${bookstorage[i].id})'>remove</button>
+        <li>${bookstorage[i].title}</li>
+        <li>${bookstorage[i].author}</li>
+        <button class='re' type='button' onclick = 'removebook(${bookstorage[i].id})'>remove</button>
       </ul>
     `;
-    }
+  }
 }
 
 // Function for removeing the existed book from object.
@@ -56,12 +56,11 @@ addbutton.addEventListener('click', () => {
   authorname.value = '';
 });
 
-//Retrive on page reload
+// Retrive on page reload
 document.addEventListener('DOMContentLoaded', () => {
-    let bookListStorage = localStorage.getItem('bookstorage');
-    if (bookListStorage) {
-        bookstorage = JSON.parse(bookListStorage);
-        displaybooks();
-    }
-
+  const bookListStorage = localStorage.getItem('bookstorage');
+  if (bookListStorage) {
+    bookstorage = JSON.parse(bookListStorage);
+    displaybooks();
+  }
 });
