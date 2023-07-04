@@ -13,6 +13,7 @@ function displaybooks() {
             obj.author = authorName.value;
         
             let newbook = {
+                id: bookStorage.length + 1,  
               title: obj.book,
               author: obj.author,
             };
@@ -26,7 +27,6 @@ function displaybooks() {
                     <ul class='added-book'>
                     <li class='book-title'>${newbook.title}</li>
                     <li class='book-author'>${newbook.author}</li>
-                    
                     </ul>
                 `;
                 const removebook = document.createElement('button');
@@ -36,8 +36,12 @@ function displaybooks() {
                 outerdiv.appendChild(removebook);
                 bookDisplay.appendChild(outerdiv);
             }
-    
-   /* function re(id) {
+    }
+}
+displaybooks();
+addBook.addEventListener('click', displaybooks);
+
+function re(id) {
         bookStorage = bookStorage.filter( (book) => book.id.toString() != id);
         localStorage.setItem('books', JSON.stringify(bookStorage));
         displaybooks();
@@ -46,12 +50,5 @@ function displaybooks() {
         e.addEventListener('click', (ele) => {
             re(ele.target.id);
         });
-    });*/
+    });
 
-    }
-    console.log(bookStorage[1]);
-
-    
-}
-displaybooks();
-addBook.addEventListener('click', displaybooks);
