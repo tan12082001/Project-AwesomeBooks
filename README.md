@@ -61,10 +61,6 @@ Goal of "Project Awesome Books" is creating a functioning webpage where we can a
 
 <!-- WALKTHROUGH -->
 
-## Walkthrough <a name="walkthrough"></a>
-
-- [Loom Video]()
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -109,6 +105,7 @@ To run the project, if you are using a Code Editor make use of live server.
 👤 **Mohammad Mahdi Niazi**
 
 - GitHub: [@Mahdi-Niazi](https://github.com/Mahdi-Niazi)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tanmayi-manku-99195720a/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
