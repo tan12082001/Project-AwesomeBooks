@@ -55,7 +55,7 @@ Goal of "Project Awesome Books" is creating a functioning webpage where we can a
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link]()
+- [Live Demo Link](https://tan12082001.github.io/Project-AwesomeBooks/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -104,8 +104,11 @@ To run the project, if you are using a Code Editor make use of live server.
 👤 **Tanmayi Manku**
 
 - GitHub: [@tan12082001](https://github.com/tan12082001)
-- Twitter: [@TanmayiManku](https://twitter.com/TanmayiManku)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/tanmayi-manku-99195720a/)
+
+👤 **Mohammad Mahdi Niazi**
+
+- GitHub: [@Mahdi-Niazi](https://github.com/Mahdi-Niazi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,9 +129,6 @@ Feel free to check the github page.
 
 Contributors for this project:
 
-👤 **Mohammad Mahdi Niazi**
-
-- GitHub: [@Mahdi-Niazi](https://github.com/Mahdi-Niazi)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
