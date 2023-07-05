@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
 * {
-  padding: 0px;
-  margin:0px;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family:'Patrick Hand', cursive; 
+  font-family: 'Patrick Hand', cursive;
 }
 
 ul {
@@ -12,77 +13,102 @@ ul {
   border-bottom: 1px solid black;
 }
 
-.wrapper{
+.wrapper {
   width: 80%;
   height: 100vh;
   margin: 0 auto;
 }
-.wrapper main{
+
+.wrapper main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.heading h1{
+
+.heading h1 {
   font-size: 42px;
   padding: 10px;
 }
-.books-display{
+
+.books-display {
   border: 2px solid gray;
   border-radius: 2px;
-  width: 50%;
-  margin-bottom: 24px;
+  width: 90%;
+  margin: 0 auto 24px;
 }
-#books{
+
+#books {
   border-collapse: collapse;
   width: 100%;
 }
-#books td{
+
+#books td {
   justify-content: space-between;
   text-align: left;
   vertical-align: middle;
+  padding: 10px;
 }
-#books tbody:nth-child(even){background-color: #f2f2f2;}
-.re{
+
+#books tbody:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.re {
   padding: 2px 10px;
   border: 2px solid black;
 }
-.add-book{
+
+.add-book {
   display: flex;
   flex-direction: column;
   width: 50%;
   justify-content: center;
   align-items: center;
 }
-.hr{
+
+.hr {
   border-bottom: 1px solid black;
   width: 20%;
   margin: 0 auto;
 }
-.title-add-new{
+
+.title-add-new {
   margin-top: 14px;
 }
-.title-add-new h3{
+
+.title-add-new h3 {
   font-size: 34px;
 }
-.title, 
-.author{
+
+.title,
+.author {
   width: 300px;
 }
+
 .book,
-.Author{
+.Author {
   padding: 8px;
   margin-top: 10px;
   width: 100%;
   border: 1px solid black;
 }
-.add-book-button{
-  padding: 0px 15px;
+
+.add-book-button {
+  padding: 0 15px;
   margin-top: 10px;
 }
-.btn-remove{
+
+.btn-remove {
   width: 80px;
 }
-.btn-book-name{
+
+.btn-book-name {
   padding-left: 10px;
+}
+
+form.book-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }

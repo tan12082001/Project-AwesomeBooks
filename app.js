@@ -70,6 +70,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // event to add book on click on the Add button.
 addbutton.addEventListener('click', () => {
+  if(bookname.value === '' || authorname.value === '') {
+    return null;
+  }
   const nbook = new Activity(bookname.value, authorname.value);
   storage.addbook(nbook);
   bookname.value = '';
