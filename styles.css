@@ -8,6 +8,7 @@
 }
 body{
   padding: 5px 20px;
+  height: 100vh;
 }
 .nav-header{
   display: flex;
@@ -40,8 +41,9 @@ body{
 
 .wrapper {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
+  border: 1px solid green;
 }
 
 .wrapper main {
@@ -136,4 +138,9 @@ form.book-form {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.footer-border{
+  border: 2px solid black;
+  padding: 0px 10px;
 }
