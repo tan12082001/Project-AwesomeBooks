@@ -70,13 +70,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // event to add book on click on the Add button.
 addbutton.addEventListener('click', () => {
-  if(bookname.value === '' || authorname.value === '') {
-    return null;
+  if (bookname.value !== '' || authorname.value !== '') {
+    const nbook = new Activity(bookname.value, authorname.value);
+    storage.addbook(nbook);
+    bookname.value = '';
+    authorname.value = '';
+    nbook.displaybooks();
+    localStorage.setItem('bookstorage', JSON.stringify(storage.bookstorage));
   }
-  const nbook = new Activity(bookname.value, authorname.value);
-  storage.addbook(nbook);
-  bookname.value = '';
-  authorname.value = '';
-  nbook.displaybooks();
-  localStorage.setItem('bookstorage', JSON.stringify(storage.bookstorage));
 });
