@@ -8,7 +8,7 @@
 }
 body{
   padding: 5px 20px;
-  height: 100vh;
+  height: 90vh;
 }
 .nav-header{
   display: flex;
@@ -43,7 +43,6 @@ body{
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  border: 1px solid green;
 }
 
 .wrapper main {
@@ -52,16 +51,21 @@ body{
   justify-content: center;
   align-items: center;
 }
+.heading{
+  text-align: center;
+}
 
 .heading h1 {
   font-size: 42px;
   padding: 10px;
 }
-
+.book-lists{
+  width: 100%;
+}
 .books-display {
   border: 2px solid gray;
   border-radius: 2px;
-  width: 90%;
+  width: 100%;
   margin: 0 auto 24px;
 }
 
