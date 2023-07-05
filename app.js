@@ -1,67 +1,81 @@
+/* eslint-disable max-classes-per-file */
 // Intializing Variables
-let bookstorage = JSON.parse(localStorage.getItem('books-display')) || [];
+const bookstorage = JSON.parse(localStorage.getItem('books-display')) || [];
 const bookname = document.getElementById('book-name');
 const authorname = document.getElementById('author-name');
 const addbutton = document.querySelector('.add-book-button');
-const presentbooks = document.querySelector('.books-display');
+const presentbooks = document.querySelector('#books');
 
-// Setting the object attributes
-const bookobject = {
-  title: this.title,
-  author: this.author,
-  id: this.id,
-};
+// Books Array class to store books
+class Books {
+  constructor() {
+    this.bookstorage = [];
+  }
 
-// Function for adding new book details
-function addbook(title, author) {
-  const newbook = Object.create(bookobject);
-  newbook.title = title;
-  newbook.author = author;
-  newbook.id = bookstorage.length + 1;
-  bookstorage.push(newbook);
-}
-
-// Function for displaying added books
-function displaybooks() {
-  presentbooks.innerHTML = '';
-  for (let i = 0; i < bookstorage.length; i += 1) {
-    bookstorage[i].id = (bookstorage.indexOf(bookstorage[i])) + 1;
-    presentbooks.innerHTML += `
-      <ul>
-        <li>${bookstorage[i].title}</li>
-        <li>${bookstorage[i].author}</li>
-        <button class='re' type='button' onclick = 'removebook(${bookstorage[i].id})'>remove</button>
-      </ul>
-    `;
+  addbook(book) {
+    this.bookstorage.push(book);
   }
 }
 
-// Function for removeing the existed book from object.
-function removebook(id) {
-  for (let i = 0; i < bookstorage.length; i += 1) {
-    if (id === bookstorage[i].id) {
-      bookstorage.splice(i, 1);
+// Books Array instance
+const storage = new Books();
+
+// class to perform Add book and remove book methods
+class Activity {
+  constructor(title, author, id) {
+    this.title = title;
+    this.author = author;
+    this.id = id;
+  }
+
+  // class method to display books
+  displaybooks() {
+    presentbooks.innerHTML = '';
+    for (let i = 0; i < storage.bookstorage.length; i += 1) {
+      storage.bookstorage[i].id = (storage.bookstorage.indexOf(storage.bookstorage[i])) + 1;
+      presentbooks.innerHTML += `
+        <tr>
+          <td class="btn-book-name">"${storage.bookstorage[i].title}" by ${storage.bookstorage[i].author} </td>
+          <td class="btn-remove"> <button class='re' type='button' id='${storage.bookstorage[i].id}'>remove</button> </td>
+        </tr>
+      `;
+    }
+    // Event to call the remove method to remove book
+    const deleteBtns = document.querySelectorAll('.re');
+    deleteBtns.forEach((deleteBtn) => {
+      deleteBtn.addEventListener('click', (e) => {
+        this.removeBook(e.target.id);
+      });
+    });
+  }
+
+  // class method to remove a book on click.
+  removeBook(id) {
+    storage.bookstorage = storage.bookstorage.filter((book) => book.id.toString() !== id);
+    this.displaybooks();
+    localStorage.setItem('bookstorage', JSON.stringify(storage.bookstorage));
+  }
+}
+// Event to display existing books from localStorage.
+document.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('bookstorage')) {
+    const tempstorage = JSON.parse(localStorage.getItem('bookstorage'));
+    for (let i = 0; i < tempstorage.length; i += 1) {
+      const book = new Activity(tempstorage[i].title, tempstorage[i].author);
+      storage.addbook(book);
+      book.displaybooks();
     }
   }
-  // Updating the localStorage
-  displaybooks();
-  localStorage.setItem('bookstorage', JSON.stringify(bookstorage));
-}
-
-// Button functionality for saving the data to the objects.
-addbutton.addEventListener('click', () => {
-  addbook(bookname.value, authorname.value);
-  displaybooks();
-  bookname.value = '';
-  authorname.value = '';
-  localStorage.setItem('bookstorage', JSON.stringify(bookstorage));
 });
 
-// Retrive on page reload
-document.addEventListener('DOMContentLoaded', () => {
-  const bookListStorage = localStorage.getItem('bookstorage');
-  if (bookListStorage) {
-    bookstorage = JSON.parse(bookListStorage);
-    displaybooks();
+// event to add book on click on the Add button.
+addbutton.addEventListener('click', () => {
+  if (bookname.value !== '' || authorname.value !== '') {
+    const nbook = new Activity(bookname.value, authorname.value);
+    storage.addbook(nbook);
+    bookname.value = '';
+    authorname.value = '';
+    nbook.displaybooks();
+    localStorage.setItem('bookstorage', JSON.stringify(storage.bookstorage));
   }
 });
