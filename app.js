@@ -57,5 +57,24 @@ class Activity {
     localStorage.setItem('bookstorage', JSON.stringify(storage.bookstorage));
   }
 }
-
 // Event to display existing books from localStorage.
+document.addEventListener('DOMContentLoaded', () => {
+  if (localStorage.getItem('bookstorage')) {
+    const tempstorage = JSON.parse(localStorage.getItem('bookstorage'));
+    for (let i = 0; i < tempstorage.length; i += 1) {
+      const book = new Activity(tempstorage[i].title, tempstorage[i].author);
+      storage.addbook(book);
+      book.displaybooks();
+    }
+  }
+});
+
+// event to add book on click on the Add button.
+addbutton.addEventListener('click', () => {
+  const nbook = new Activity(bookname.value, authorname.value);
+  storage.addbook(nbook);
+  bookname.value = '';
+  authorname.value = '';
+  nbook.displaybooks();
+  localStorage.setItem('bookstorage', JSON.stringify(storage.bookstorage));
+});
