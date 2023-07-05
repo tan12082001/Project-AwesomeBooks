@@ -5,6 +5,10 @@ const bookname = document.getElementById('book-name');
 const authorname = document.getElementById('author-name');
 const addbutton = document.querySelector('.add-book-button');
 const presentbooks = document.querySelector('#books');
+const e = document.querySelectorAll('.ele');
+const c = document.querySelectorAll('.content');
+const few = document.getElementsByTagName('a');
+const sec=document.getElementsByTagName('section');
 
 // Books Array class to store books
 class Books {
@@ -79,3 +83,31 @@ addbutton.addEventListener('click', () => {
     localStorage.setItem('bookstorage', JSON.stringify(storage.bookstorage));
   }
 });
+
+//Display sections according to the nav elements
+/*for(let i=0; i<e.length; i++ ){
+  e[i].addEventListener('click', () => {
+      c[i].classList.add('active');
+      for(let j=0; j<c.length; j++){
+          if( j != i) {
+           c[j].classList.remove('active');
+          }
+       }
+  });    
+}*/
+window.addEventListener('DOMContentLoaded', () => {
+  c[0].classList.toggle('active');
+});
+
+for(let i=0;i<few.length;i++) {
+  few[i].addEventListener('click', () => {
+      for(let j=0; j<sec.length; j++){
+          if(i == j ){
+              sec[j].style.display ='block';
+          }
+          else {
+              sec[j].style.display='none';
+          }
+      }
+  })
+}
