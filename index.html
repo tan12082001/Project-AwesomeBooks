@@ -14,9 +14,9 @@
             </div>
             <div class="main-menu">
                 <ul>
-                    <li>list</li>
-                    <li id="add-new">Add new</li>
-                    <li>Contact</li>
+                    <li class="ele"><a href='#list'>List</a></li>
+                    <li class="ele" id="add-new"><a href='#addnew'>Add new</a></li>
+                    <li class="ele"><a href="#cont">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -24,7 +24,7 @@
     </header>
     <div class="wrapper">
         <main>
-            <section class="book-lists">
+            <section class="book-lists content" id="list">
                 <div class="heading">
                 <h1>Awesome Books</h1>
                 </div>
@@ -34,7 +34,7 @@
                     </table>
                 </div>
             </section>
-            <section class="new-entry" style="display: none;">
+            <section class="new-entry content" id="addnew">
                 <div class="add-book">
                 <div class="hr"></div>
                 <div class="title-add-new">
@@ -53,7 +53,7 @@
                 </form>
             </div>
             </section>
-            <section class="contact-us">
+            <section class="contact-us content" id="cont">
                 <div class="main">
                     <h2>Contact Information</h2>
                     <p>Do you have any question or you just want to say "Hello"?</p>

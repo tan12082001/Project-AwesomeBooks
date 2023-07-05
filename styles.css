@@ -8,7 +8,9 @@
 }
 body{
   padding: 5px 20px;
-  height: 90vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .nav-header{
   display: flex;
@@ -61,12 +63,14 @@ body{
 }
 .book-lists{
   width: 100%;
+  display: none;
 }
 .books-display {
   border: 2px solid gray;
   border-radius: 2px;
   width: 100%;
   margin: 0 auto 24px;
+
 }
 
 #books {
@@ -147,4 +151,18 @@ form.book-form {
 .footer-border{
   border: 2px solid black;
   padding: 0px 10px;
+}
+
+.new-entry {
+  display: none;
+  width: 100%;
+  background-color: blue;
+}
+.active {
+  display:block;
+}
+.contact-us {
+  display:none;
+  width: 100%;
+  background: purple;
 }
