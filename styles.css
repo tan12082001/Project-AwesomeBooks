@@ -55,8 +55,9 @@ a:hover {
 }
 
 .currentDate {
-  width: 150px;
   padding: 5px;
+  width: 100%;
+  text-align: right;
 }
 
 #add-new {
