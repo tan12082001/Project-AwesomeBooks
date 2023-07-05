@@ -15,16 +15,24 @@
             <div class="heading">
                 <h1>Awesome Books</h1>
             </div>
-            <div class="books-display"></div>
+            <div class="books-display">
+                <table id="books">
+
+                </table>
+            </div>
             <div class="add-book">
-                <form action="" method="POST">
+                <div class="hr"></div>
+                <div class="title-add-new">
+                    <h3>Add a new book</h3>
+                </div>
+                <form action="" method="POST" class="book-form">
                     <div class="title">
                         <label for="book-name"></label>
                         <input class="book" type="text" id="book-name" placeholder="Title" required>
                     </div>
                     <div class="author">
                         <label for="author-name"></label>
-                        <input class="author" type="text" id="author-name" placeholder="Author" required>
+                        <input class="Author" type="text" id="author-name" placeholder="Author" required>
                     </div>
                     
                         <button class="add-book-button" type="button">Add</button>
