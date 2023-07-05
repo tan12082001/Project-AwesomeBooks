@@ -7,21 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        
+    <header class="nav-header">
+        <nav class="navbar">
+            <div class="nav-title">
+                <h2>Awesome Books</h2>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li class="ele"><a href='#list'>List</a></li>
+                    <li class="ele" id="add-new"><a href='#addnew'>Add new</a></li>
+                    <li class="ele"><a href="#cont">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+       <div class="currentDate">March 29 2023 20:30:00</div> 
     </header>
     <div class="wrapper">
         <main>
-            <div class="heading">
+            <section class="book-lists content" id="list">
+                <div class="heading">
                 <h1>Awesome Books</h1>
-            </div>
-            <div class="books-display">
-                <table id="books">
+                </div>
+                <div class="books-display">
+                    <table id="books">
 
-                </table>
-            </div>
-            <div class="add-book">
-                <div class="hr"></div>
+                    </table>
+                </div>
+            </section>
+            <section class="new-entry content" id="addnew">
+                <div class="add-book">
                 <div class="title-add-new">
                     <h3>Add a new book</h3>
                 </div>
@@ -37,11 +51,24 @@
                         <button class="add-book-button" type="submit">Add</button>
                 </form>
             </div>
+            </section>
+            <section class="contact-us content" id="cont">
+                <div class="main">
+                    <h2>Contact Information</h2>
+                    <p>Do you have any question or you just want to say "Hello"?</p>
+                    <p>You can reach out to us!</p>
+                    <ul class="info">
+                        <li>Our email: mail@mail.com</li>
+                        <li>Our phone number: 0043879775</li>
+                        <li>Our address: street name 22, 84503 city, country</li>
+                    </ul>
+                </div>
+            </section>
         </main>
-        <footer>
-    
-        </footer>
     </div>
+    <footer class="footer-border">
+            <h2>Copyright ...</h2>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
