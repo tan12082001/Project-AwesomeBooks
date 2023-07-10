@@ -67,7 +67,7 @@ Goal of "Project Awesome Books" is creating a functioning webpage where we can a
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-With this Project portfolio, you can get an basic idea of how you can design a Responsive Web design and make use of media queries.
+With this Project Awesome-Books, you can get an basic idea of how you can make use of JavaScript data structures to store and display data that is editable with features.
 To get a local copy up and running, follow these steps.
 ### Prerequisites
 
