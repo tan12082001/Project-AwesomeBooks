@@ -41,17 +41,9 @@ body {
   padding: 10px;
 }
 
-a:link {
+a {
   color: #000;
   text-decoration: none;
-}
-
-a:visited {
-  color: rgb(44, 41, 238);
-}
-
-a:hover {
-  color: #000;
 }
 
 .currentDate {
