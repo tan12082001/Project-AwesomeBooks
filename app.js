@@ -93,8 +93,10 @@ for (let i = 0; i < few.length; i += 1) {
     for (let j = 0; j < sec.length; j += 1) {
       if (i === j) {
         sec[j].style.display = 'block';
+        few[j].style.color = '#2935F2';
       } else {
         sec[j].style.display = 'none';
+        few[j].style.color = '#000';
       }
     }
   });
